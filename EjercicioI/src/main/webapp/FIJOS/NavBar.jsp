@@ -46,7 +46,7 @@
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Capacitación</a>
                         <div class="dropdown-menu">
                             <a href="CrearCapacitacion" class="dropdown-item">Crear Capacitación</a>
-                            <a href="ListarCapacitacion" class="dropdown-item">Lista de Capacitaciones</a>
+                            <a href="Capacitacion" class="dropdown-item">Lista de Capacitaciones</a>
                             <a href="#" class="dropdown-item">Editar Capacitacion</a>
                             <a href="#" class="dropdown-item">Eliminar Capacitacion</a>
                         </div>
@@ -56,7 +56,7 @@
                     <li class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Usuario</a>
                         <div class="dropdown-menu dropdown-menu-end">
-                            <a href="FormularioContacto" class="dropdown-item">Contacto</a>
+                            <a href="Contacto" class="dropdown-item">Contacto</a>
                             <a href="CrearUsuario" class="dropdown-item">Crear Usuario</a>
                             <a href="ListarUsuario" class="dropdown-item">Lista de Usuarios</a>
                             <div class="dropdown-divider"></div>
