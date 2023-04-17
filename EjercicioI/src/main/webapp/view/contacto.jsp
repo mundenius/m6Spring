@@ -27,6 +27,7 @@
 	    <label for="exampleFormControlTextarea1">Motivo de Contacto</label>
 	    <textarea type= "text" class="form-control" id="contacto" name="contacto" rows="3"></textarea>
 	  </div>
+	  <button type="submit" class="btn btn-primary" id="save">Enviar</button>
 	</form>
 </div>
 
