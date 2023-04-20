@@ -36,9 +36,6 @@
 <!-- 						<label for="rutCliente">Rut de Cliente:</label> <select class="form-select" required aria-label="select example" -->
 <!-- 							id="rutCliente" name="rutCliente"> -->
 <!-- 							<option value="" disabled selected hidden>Selecciona un Rut de Cliente Existente</option> -->
-<%-- 							<c:forEach var="client" items="${requestScope.clientes}"> --%>
-<%-- 								<option value="${client.rutCliente}"><c:out value="${client.nombres}" />&nbsp;<c:out value="${client.apellidos}" />&nbsp;-&nbsp;<c:out value="${client.rutCliente}"/></option> --%>
-<!-- 							</c:forEach>	 -->
 <!-- 						</select> -->
 <!-- 					</div> -->
 					<div class="form-group" >
