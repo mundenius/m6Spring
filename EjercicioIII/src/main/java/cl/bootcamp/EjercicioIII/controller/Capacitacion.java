@@ -15,7 +15,7 @@ import javax.servlet.http.HttpServletResponse;
 /**
  * Servlet implementation class Index
  */
-@WebServlet(name = "Capacitacion", urlPatterns = {"/Capacitacion"})
+//@WebServlet(name = "Capacitacion", urlPatterns = {"/Capacitacion"})
 public class Capacitacion extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        

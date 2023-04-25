@@ -27,7 +27,7 @@ Fernanda Zuñiga
 		</div>
 	</div>
 	<br>
-	<form action="Login" method="POST">
+	<form action="/validacionLogin" method="POST">
 	<div class="login">
 		<label for="usuario"><Strong>Usuario</Strong></label>
 		<input type="text" placeholder="Escriba usuario aqui" name="usuario" id="usuario"><br><br>
@@ -49,6 +49,6 @@ Fernanda Zuñiga
 	<% } %>
 </body>
 <footer>
-<%@include file= "WEB-INF/views/FIJOS/Footer.jsp" %>
+<%@include file= "FIJOS/Footer.jsp" %>
 </footer>
 </html>
