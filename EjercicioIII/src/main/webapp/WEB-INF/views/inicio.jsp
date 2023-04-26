@@ -8,9 +8,9 @@
 </head>
 <body>
 <h1>Inicio</h1>
-<%@include file="WEB-INF/views/FIJOS/NavBar.jsp" %>
+<%@include file="FIJOS/NavBar.jsp" %>
 
 
-<%@include file="WEB-INF/views/FIJOS/Footer.jsp" %>
+<%@include file="FIJOS/Footer.jsp" %>
 </body>
 </html>
