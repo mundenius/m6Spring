@@ -20,6 +20,11 @@
 		<!-- Spring core & mvc -->
 		<dependency>
 			<groupId>org.springframework</groupId>
+			<artifactId>spring-core</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
 			<artifactId>spring-context</artifactId>
 			<version>${spring.version}</version>
 		</dependency>
@@ -61,15 +66,24 @@
 			<version>4.0.0</version>
 			<scope>provided</scope>
 		</dependency>
+		
+		<!-- JSTL -->
 		<dependency>
 		    <groupId>javax.servlet</groupId>
 		    <artifactId>jstl</artifactId>
     		<version>1.2</version>
 		</dependency>
+		
+		<!-- MySQL -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-jdbc</artifactId>
+			<version>5.0.2.RELEASE</version>
+		</dependency>
 		<dependency>
     		<groupId>mysql</groupId>
     		<artifactId>mysql-connector-java</artifactId>
-    		<version>8.0.26</version>
+    		<version>8.0.32</version>
 		</dependency>
 	</dependencies>
 

@@ -24,7 +24,7 @@
 		</init-param>
 		<init-param>
 			<param-name>contextConfigLocation</param-name>
-			<param-value>cl.bootcamp.EjercicioIII.config.Mvc</param-value>
+			<param-value>cl.bootcamp.EjercicioIII</param-value>
 		</init-param>
 		<load-on-startup>1</load-on-startup>
 	</servlet>
@@ -36,7 +36,4 @@
 	<session-config>
 		<session-timeout>30</session-timeout>
 	</session-config>
-	<welcome-file-list>
-      <welcome-file>index.jsp</welcome-file>
-   </welcome-file-list>
 </web-app>
