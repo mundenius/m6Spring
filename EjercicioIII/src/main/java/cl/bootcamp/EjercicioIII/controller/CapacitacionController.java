@@ -19,13 +19,14 @@ import org.springframework.web.servlet.ModelAndView;
 import cl.bootcamp.EjercicioIII.model.ImplCapacitacionDAO;
 
 @Controller
+@RequestMapping("/capacitaciones")
 public class CapacitacionController {
 
 	private ImplCapacitacionDAO capacitacion;
 	
-	@RequestMapping(value="/crearCapacitacion", method= {RequestMethod.GET, RequestMethod.POST})
+	@RequestMapping(value="/crearCapacitacion", method= RequestMethod.GET)
 	public ModelAndView mostrarFormulario(HttpServletResponse response) throws IOException {
-		response.sendRedirect("/views/crearCapacitacion.jsp");
+		response.sendRedirect("/crearCapacitacion");
 		return null;
 	}
 	
