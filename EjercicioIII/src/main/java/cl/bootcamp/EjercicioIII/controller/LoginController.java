@@ -35,7 +35,7 @@ public class LoginController {
     /**Aqui defino en especifico que metodo estoy usando para consumir el servicio de validacion de login 
      * Al ser datos sensibles, se usa el metodo POST.
      * Si no se definiera el metodo, se usara el por default que es el GET */
-    @RequestMapping(value="/validacionLogin", method=RequestMethod.POST)
+    @RequestMapping(value="/login", method=RequestMethod.POST)
     public String validar(@RequestParam("usuario") String nombre, @RequestParam("pass") String password, Model modelo) {
         if(validacionService.validacionDatos(nombre, password)) {
             modelo.addAttribute("nombre", nombre);

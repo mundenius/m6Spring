@@ -27,7 +27,7 @@ Fernanda Zuñiga
 		</div>
 	</div>
 	<br>
-	<form action="validacionLogin" method="POST">
+	<form action="login" method="POST">
 	<div class="login">
 		<label for="usuario"><Strong>Usuario</Strong></label>
 		<input type="text" placeholder="Escriba usuario aqui" name="usuario" id="usuario"><br><br>
