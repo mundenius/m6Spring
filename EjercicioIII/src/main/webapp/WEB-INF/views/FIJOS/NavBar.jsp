@@ -55,7 +55,7 @@
                     <li class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Usuario</a>
                         <div class="dropdown-menu dropdown-menu-end">
-                            <a href="Contacto" class="dropdown-item">Contacto</a>
+                            <a href="contacto/crearContacto" class="dropdown-item">Contacto</a>
                             <a href="CrearUsuario" class="dropdown-item">Crear Usuario</a>
                             <a href="ListarUsuario" class="dropdown-item">Lista de Usuarios</a>
                             <div class="dropdown-divider"></div>
