@@ -4,6 +4,7 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.util.List;
 import java.util.ArrayList;
+import org.springframework.jdbc.core.JdbcTemplate;
 
 import cl.bootcamp.EjercicioV.interfaces.CRUD;
 import cl.bootcamp.EjercicioV.model.Capacitacion;
