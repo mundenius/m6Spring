@@ -20,7 +20,7 @@ import org.springframework.web.servlet.view.InternalResourceViewResolver;
 import cl.bootcamp.EjercicioV.dao.ImplCapacitacionDAO;
 
 @Configuration
-@ComponentScan(basePackages="cl.bootcamp.EjercicioIII")
+@ComponentScan(basePackages="cl.bootcamp.EjercicioV")
 @EnableWebMvc
 public class MvcConfiguration extends WebMvcConfigurerAdapter{
 
