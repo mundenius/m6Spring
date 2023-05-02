@@ -4,7 +4,7 @@
     
     
     
-    <wb-module deploy-name="EjercicioI">
+    <wb-module deploy-name="EjercicioIII">
                                                 
         
         
@@ -27,18 +27,20 @@
         
         
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/target/generated-sources/annotations"/>
+                
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/target/generated-test-sources/test-annotations"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/test/java"/>
                                                 
         
         
         
         
-        <property name="context-root" value="EjercicioI"/>
-                                                
+        <property name="java-output-path" value="/JensProject/target/classes"/>
+                                        
         
         
         
-        
-        <property name="java-output-path" value="/EjercicioI/target/classes"/>
+        <property name="context-root" value="EjercicioIII"/>
                                             
     
     
