@@ -1,7 +1,7 @@
 package cl.bootcamp.EjercicioV.dao;
 
 import java.util.ArrayList;
-import java.util.List;
+import org.springframework.jdbc.core.JdbcTemplate;
 
 import cl.bootcamp.EjercicioV.interfaces.ICapacitacionDao;
 import cl.bootcamp.EjercicioV.model.Capacitacion;
