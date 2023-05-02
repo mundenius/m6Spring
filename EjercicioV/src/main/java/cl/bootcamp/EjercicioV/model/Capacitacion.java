@@ -1,4 +1,4 @@
-package cl.bootcamp.EjercicioIV.model;
+package cl.bootcamp.EjercicioV.model;
 
 
 

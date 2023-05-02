@@ -1,4 +1,4 @@
-package cl.bootcamp.EjercicioIV.config;
+package cl.bootcamp.EjercicioV.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
@@ -17,7 +17,7 @@ import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
 import org.springframework.web.servlet.view.InternalResourceViewResolver;
 
-import cl.bootcamp.EjercicioIV.dao.ImplCapacitacionDAO;
+import cl.bootcamp.EjercicioV.dao.ImplCapacitacionDAO;
 
 @Configuration
 @ComponentScan(basePackages="cl.bootcamp.EjercicioIII")
