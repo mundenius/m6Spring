@@ -47,4 +47,4 @@
 		</c:forEach>
 	</table>
 </body>
-</html>5 nn 
+</html>
