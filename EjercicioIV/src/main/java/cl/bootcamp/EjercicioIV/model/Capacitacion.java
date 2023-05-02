@@ -2,7 +2,7 @@ package cl.bootcamp.EjercicioIV.model;
 
 
 
-public class Capacitacion{
+public class Capacitacion {
 
 	private int idCapacitacion;
 	private String capFecha;
