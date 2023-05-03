@@ -4,24 +4,17 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 
-import javax.servlet.ServletException;
-import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
 import cl.bootcamp.EjercicioVI.interfaces.ICapacitacionDao;
-import cl.bootcamp.EjercicioVI.dao.ImplCapacitacionDAO;
 import cl.bootcamp.EjercicioVI.model.Capacitacion;
 
 
@@ -36,12 +29,15 @@ public class CapacitacionController {
 		return new ModelAndView("crearCapacitacion");
 	}
 	
-	
+	@Autowired
+	private ICapacitacionDao capdao;
 	@RequestMapping(value="/listarCapacitaciones", method = RequestMethod.GET)
 	public ModelAndView listarCapacitaciones(HttpServletResponse response) throws IOException{
-		ICapacitacionDao capdao = new ImplCapacitacionDAO();
-		System.out.println(capdao.obtenerCapacitacion());
-		return new ModelAndView("listarCapacitaciones");
+		List<Capacitacion> capacitaciones = capdao.obtenerCapacitacion();
+		System.out.println(capdao.toString());
+		ModelAndView mav = new ModelAndView("listarCapacitaciones");
+		mav.addObject("listaCapacitacion", capacitaciones);
+		return mav;
 //			// Creamos una lista de capacitaciones
 //			List<Map<String, String>> capacitaciones = new ArrayList<Map<String, String>>();
 //			
