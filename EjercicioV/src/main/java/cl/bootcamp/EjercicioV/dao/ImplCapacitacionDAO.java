@@ -12,6 +12,7 @@ import cl.bootcamp.EjercicioV.model.Capacitacion;
 
 public class ImplCapacitacionDAO implements ICapacitacionDao{
 
+	List<Capacitacion> lista = new ArrayList<Capacitacion>();
 	@Override
 	public List<Capacitacion> obtenerCapacitacion() {
 		// TODO Auto-generated method stub
@@ -19,7 +20,6 @@ public class ImplCapacitacionDAO implements ICapacitacionDao{
 		Capacitacion c2 = new Capacitacion(2,"10/03/2023", "11:00", "Quilpue", 60, "22331465-k");
 		Capacitacion c3 = new Capacitacion(3, "27/04/2023", "12:00", "Concon", 45, "98765432-1");
 		
-		List<Capacitacion> lista = new ArrayList<Capacitacion>();
 		
 		lista.add(c1);
 		lista.add(c2);
@@ -31,6 +31,9 @@ public class ImplCapacitacionDAO implements ICapacitacionDao{
 	@Override
 	public boolean crearCapacitacion(Capacitacion cap) {
 		cap.toString();
+		lista.add(cap);
+		System.out.println(cap);
+	
 		
 		return false;
 	}

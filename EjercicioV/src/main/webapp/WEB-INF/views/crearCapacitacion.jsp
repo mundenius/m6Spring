@@ -22,15 +22,15 @@
 				<br>
 				<h1 class="h3 mb-3 fw-normal text-center">Crear capacitación</h1>
 
-				<form  class="was'validated" action="capacitaciones/crearCapacitacion" method="post">
+				<form  class="was'validated" action="crearCapacitacion" method="post">
 					<div class="form-group">
 						<label class="text-center" for="idCapacitacion">ID de
 							Capacitación:</label> <input type="number" class="form-control"
-							id="idCapacitacion" required name="idCapacitacion">
+							id="idCapacitacion" name="idCapacitacion">
 					</div>
 					<div class="form-group">
 						<label class="text-center" for="rutCliente">RUT Cliente:</label> <input type="number" class="form-control"
-							id="rutCliente" required name="idUsuario_Run">
+							id="rutCliente" name="idUsuario_Run">
 					</div>
 				
 <!-- 					<div class="form-group"> -->
@@ -76,11 +76,7 @@
 							<option value="240">4 Horas</option>
 						</select>
 					</div>
-					<div class="form-group">
-						<label class="text-center" for="cantAsist">Cantidad de
-							Asistentes:</label> <input type="number" class="form-control"
-							id="cantAsist" required name="cantAsist">
-					</div>
+
 					<br>
 					<button type="submit" class="btn btn-primary" id="save">Guardar</button>
 					<br>
