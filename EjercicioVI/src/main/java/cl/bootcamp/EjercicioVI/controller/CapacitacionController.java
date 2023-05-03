@@ -34,7 +34,9 @@ public class CapacitacionController {
 	@RequestMapping(value="/listarCapacitaciones", method = RequestMethod.GET)
 	public ModelAndView listarCapacitaciones(HttpServletResponse response) throws IOException{
 		List<Capacitacion> capacitaciones = capdao.obtenerCapacitacion();
-		System.out.println(capdao.toString());
+		for(int i = 0 ; i < capacitaciones.size() ; i++) {
+			capacitaciones.toString();
+		}
 		ModelAndView mav = new ModelAndView("listarCapacitaciones");
 		mav.addObject("listaCapacitacion", capacitaciones);
 		return mav;
