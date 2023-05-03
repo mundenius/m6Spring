@@ -5,7 +5,6 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
-
 import javax.servlet.http.HttpServletResponse;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,26 +16,26 @@ import org.springframework.web.servlet.ModelAndView;
 import cl.bootcamp.EjercicioVI.interfaces.ICapacitacionDao;
 import cl.bootcamp.EjercicioVI.model.Capacitacion;
 
-
 @Controller
 @RequestMapping("/capacitaciones")
 public class CapacitacionController {
 
 //	private ImplCapacitacionDAO capacitacion;
 //	
-	@RequestMapping(value="/crearCapacitacion", method= RequestMethod.GET)
-	public ModelAndView mostrarFormulario(){
+	@RequestMapping(value = "/crearCapacitacion", method = RequestMethod.GET)
+	public ModelAndView mostrarFormulario() {
 		return new ModelAndView("crearCapacitacion");
 	}
-	
+
 	@Autowired
 	private ICapacitacionDao capdao;
-	@RequestMapping(value="/listarCapacitaciones", method = RequestMethod.GET)
-	public ModelAndView listarCapacitaciones(HttpServletResponse response) throws IOException{
+
+	@RequestMapping(value = "/listarCapacitaciones", method = RequestMethod.GET)
+	public ModelAndView listarCapacitaciones(HttpServletResponse response) throws IOException {
 		List<Capacitacion> capacitaciones = capdao.obtenerCapacitacion();
-		for(int i = 0 ; i < capacitaciones.size() ; i++) {
-			capacitaciones.toString();
-		}
+		System.out.println(capacitaciones);
+//		for (int i = 0; i < capacitaciones.size(); i++) {
+//		}
 		ModelAndView mav = new ModelAndView("listarCapacitaciones");
 		mav.addObject("listaCapacitacion", capacitaciones);
 		return mav;
@@ -74,12 +73,10 @@ public class CapacitacionController {
 //			// Creamos el ModelAndView y le pasamos las capacitaciones como atributo
 //			ModelAndView modelAndView = new ModelAndView("listarCapacitaciones");
 //			modelAndView.addObject("capacitaciones", capacitaciones);
-			
-		}
-	}
 
-	
-	
+	}
+}
+
 //	@PostMapping("/crearCapacitacion")
 //	public String procesarFormulario(@ModelAttribute("capcitaciones")Capacitacion capacitacion) {
 //		ImplCapacitacionDAO.crear(capacitacion);
@@ -93,4 +90,3 @@ public class CapacitacionController {
 //		mav.addObject("listacap", capacitaciones);
 //		return mav;
 //	}
-

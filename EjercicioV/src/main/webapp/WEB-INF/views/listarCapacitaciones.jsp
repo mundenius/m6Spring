@@ -24,7 +24,7 @@
                         <th><i class="fa-regular fa-clock text-info px-1"></i>Hora</th>
                         <th><i class="fa-solid fa-location-dot text-danger px-1"></i>Lugar</th>
                         <th><i class="fa-solid fa-stopwatch text-primary px-1"></i>Duración</th>
-                        <th><i class="fa-solid fa-users px-1"></i>Asistentes</th>
+                        <th><i class="fa-solid fa-users px-1"></i></th>
                         <th>Opciones</th>
                     </tr>
                 </thead>
@@ -35,7 +35,7 @@
                         <tr>
                             <th>${capacitacion.idCapacitacion}</th>
                             <td>${capacitacion.idUsuario_Run}</td>
-                            <td><fmt:formatDate value="${capacitacion.capFecha}" pattern="dd.MMM.yyyy" /></td>
+                            <td>${capacitacion.capFecha}</td>
                             <td>${capacitacion.capHora}</td>
                             <td>${capacitacion.capLugar}</td>
                             <td class="text-center"><i class="fa-solid fa-stopwatch px-1 text-primary"></i><span>${capacitacion.capDuracion} min.</span></td>
