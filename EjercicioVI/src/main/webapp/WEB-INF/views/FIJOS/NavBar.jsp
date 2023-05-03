@@ -12,7 +12,7 @@
             <div id="navbarCollapse" class="collapse navbar-collapse">
                 <ul class="nav navbar-nav">
                     <li class="nav-item">
-                        <a href="Inicio" class="nav-link">Inicio</a>
+                        <a href="inicio" class="nav-link">Inicio</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Administrativo</a>

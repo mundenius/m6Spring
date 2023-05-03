@@ -18,6 +18,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter
 import org.springframework.web.servlet.view.InternalResourceViewResolver;
 
 import cl.bootcamp.EjercicioVI.dao.ImplCapacitacionDAO;
+import cl.bootcamp.EjercicioVI.interfaces.ICapacitacionDao;
 
 @Configuration
 @ComponentScan(basePackages="cl.bootcamp.EjercicioVI")
@@ -49,10 +50,11 @@ public class MvcConfiguration extends WebMvcConfigurerAdapter{
 		return bds;
 	}
 	
-//	@Bean
-//	public CapacitacionDao getCapacitacionDao() {
-//		return new CapacitacionDaoImpl(getDataSource());
-//	}
+	@Bean
+	
+	public ICapacitacionDao getCapacitacionDao() {
+		return new ImplCapacitacionDAO();
+	}
 
 
 	

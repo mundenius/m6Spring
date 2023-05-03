@@ -22,6 +22,8 @@ public class ImplCapacitacionDAO implements ICapacitacionDao{
 		lista.add(c2);
 		lista.add(c3);
 		
+		
+		
 		return lista;
 	}
 
