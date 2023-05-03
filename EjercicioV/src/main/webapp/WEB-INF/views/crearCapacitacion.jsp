@@ -22,16 +22,15 @@
 				<br>
 				<h1 class="h3 mb-3 fw-normal text-center">Crear capacitación</h1>
 
-				<form  class="was'validated" action="CrearCapacitacion" method="post">
+				<form  class="was'validated" action="crearCapacitacion" method="post">
 					<div class="form-group">
 						<label class="text-center" for="idCapacitacion">ID de
 							Capacitación:</label> <input type="number" class="form-control"
-							id="idCapacitacion" required name="idCapacitacion">
+							id="idCapacitacion" name="idCapacitacion">
 					</div>
-					<form  class="was-validated" action="CrearCapacitacion" method="post">
 					<div class="form-group">
 						<label class="text-center" for="rutCliente">RUT Cliente:</label> <input type="number" class="form-control"
-							id="rutCliente" required name="rutCliente">
+							id="rutCliente" name="idUsuario_Run">
 					</div>
 				
 <!-- 					<div class="form-group"> -->
@@ -42,7 +41,7 @@
 <!-- 					</div> -->
 					<div class="form-group" >
 						<label for="dia">Día:</label> 
-						<select class="form-select" required aria-label="select example" id="dia" name="dia" >
+						<select class="form-select" required aria-label="select example" id="dia" name="capFecha" >
 							<option value="" disabled selected hidden>Selecciona un
 								día</option>
 							<option value="lunes">Lunes</option>
@@ -56,16 +55,16 @@
 					</div>
 					<div class="form-group">
 						<label class="text-center" for="hora">Hora (xx:xx):</label> <input
-							type="time" class="form-control" id="hora" name="hora" required
+							type="time" class="form-control" id="hora" name="capHora" required
 							pattern="^(0[0-9]|1[0-9]|2[0-3]):[0-5][0-9]$">
 					</div>
 					<div class="form-group">
 						<label class="text-center" for="lugar">Lugar:</label> <input
-							type="text" required class="form-control" id="lugar" name="lugar">
+							type="text" required class="form-control" id="lugar" name="capLugar">
 					</div>
 					<div class="form-group">
 						<label class="text-center" for="duracion">Duración:</label> 
-						<select class="form-select" required aria-label="select example" id="duracion" name="duracion" >
+						<select class="form-select" required aria-label="select example" id="duracion" name="capDuracion" >
 							<option value="" disabled selected hidden>Selecciona duracion</option>
 							<option value="30">30 minutos</option>
 							<option value="60">1 Hora</option>
@@ -77,11 +76,7 @@
 							<option value="240">4 Horas</option>
 						</select>
 					</div>
-					<div class="form-group">
-						<label class="text-center" for="cantAsist">Cantidad de
-							Asistentes:</label> <input type="number" class="form-control"
-							id="cantAsist" required name="cantAsist">
-					</div>
+
 					<br>
 					<button type="submit" class="btn btn-primary" id="save">Guardar</button>
 					<br>
