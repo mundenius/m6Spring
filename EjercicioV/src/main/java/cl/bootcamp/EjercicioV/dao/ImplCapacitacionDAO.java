@@ -24,13 +24,14 @@ public class ImplCapacitacionDAO implements ICapacitacionDao{
 		lista.add(c1);
 		lista.add(c2);
 		lista.add(c3);
-		
+				
 		return lista;
 	}
 
 	@Override
 	public boolean crearCapacitacion(Capacitacion cap) {
-		// TODO Auto-generated method stub
+		cap.toString();
+		
 		return false;
 	}
 	

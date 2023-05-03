@@ -34,17 +34,19 @@ public class CapacitacionController {
 //	
 	@RequestMapping(value="/crearCapacitacion", method= RequestMethod.GET)
 	public ModelAndView mostrarFormulario(){
-		return new ModelAndView("crearCapacitacion");
+				return new ModelAndView("crearCapacitacion");
 	}
 	
 	@Autowired
-	private ICapacitacionDao capdao;
+	private ICapacitacionDao icapdao;
 	@RequestMapping(value="/listarCapacitaciones", method = RequestMethod.GET)
 	public ModelAndView listarCapacitaciones(HttpServletResponse response) throws IOException{
-		List<Capacitacion> capacitaciones = capdao.obtenerCapacitacion();
-		for(int i = 0 ; i < capacitaciones.size() ; i++) {
-			capacitaciones.toString();
-		}
+		List<Capacitacion> capacitaciones = icapdao.obtenerCapacitacion();
+//		System.out.println(capdao.obtenerCapacitacion());
+		System.out.println(capacitaciones);
+//		for(int i = 0 ; i < capacitaciones.size() ; i++) {
+//			System.out.println(capacitaciones.toString());
+//	}
 		ModelAndView mav = new ModelAndView("listarCapacitaciones");
 		mav.addObject("listaCapacitacion", capacitaciones);
 		return mav;
@@ -84,15 +86,18 @@ public class CapacitacionController {
 //			modelAndView.addObject("capacitaciones", capacitaciones);
 			
 		}
+	
+	
+	public CapacitacionController(ICapacitacionDao icapdao) {
+		this.icapdao = icapdao;
 	}
-
 	
-	
-//	@PostMapping("/crearCapacitacion")
-//	public String procesarFormulario(@ModelAttribute("capcitaciones")Capacitacion capacitacion) {
-//		ImplCapacitacionDAO.crear(capacitacion);
-//		return "redirect:/capacitaciones/listar";
-//	}
+	@PostMapping("/crearCapacitacion")
+	public String procesarFormulario(@ModelAttribute("capacitaciones")Capacitacion capacitacion) {
+		icapdao.crearCapacitacion(capacitacion);
+		return "redirect:/capacitaciones/listar";
+	}
+}
 //	
 //	@GetMapping("/listar")
 //	public ModelAndView listarCapacitacion() {
