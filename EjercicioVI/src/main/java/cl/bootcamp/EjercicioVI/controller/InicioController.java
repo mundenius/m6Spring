@@ -8,6 +8,6 @@ public class InicioController {
 
 	@RequestMapping("/inicio")
 	public String inicio() {
-		return "inicio.jsp";
+		return "inicio";
 	}
 }

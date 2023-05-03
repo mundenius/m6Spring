@@ -11,6 +11,7 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -36,12 +37,17 @@ public class CapacitacionController {
 		return new ModelAndView("crearCapacitacion");
 	}
 	
-	
+	@Autowired
+	private ICapacitacionDao capdao;
 	@RequestMapping(value="/listarCapacitaciones", method = RequestMethod.GET)
 	public ModelAndView listarCapacitaciones(HttpServletResponse response) throws IOException{
-		ICapacitacionDao capdao = new ImplCapacitacionDAO();
-		System.out.println(capdao.obtenerCapacitacion());
-		return new ModelAndView("listarCapacitaciones");
+		List<Capacitacion> capacitaciones = capdao.obtenerCapacitacion();
+		for(int i = 0 ; i < capacitaciones.size() ; i++) {
+			capacitaciones.toString();
+		}
+		ModelAndView mav = new ModelAndView("listarCapacitaciones");
+		mav.addObject("listaCapacitacion", capacitaciones);
+		return mav;
 //			// Creamos una lista de capacitaciones
 //			List<Map<String, String>> capacitaciones = new ArrayList<Map<String, String>>();
 //			

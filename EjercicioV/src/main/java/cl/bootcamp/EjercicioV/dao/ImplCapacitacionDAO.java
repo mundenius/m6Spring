@@ -5,6 +5,7 @@ import org.springframework.jdbc.core.JdbcTemplate;
 import java.util.List;
 
 
+
 import cl.bootcamp.EjercicioV.interfaces.ICapacitacionDao;
 import cl.bootcamp.EjercicioV.model.Capacitacion;
 

@@ -71,6 +71,12 @@ public class Capacitacion {
 	public void setIdUsuario_Run(String idUsuario_Run) {
 		this.idUsuario_Run = idUsuario_Run;
 	}
+
+	@Override
+	public String toString() {
+		return "Capacitacion: " + idCapacitacion + "\nFecha: " + capFecha + "\nHora: " + capHora
+				+ "\nLugar: " + capLugar + "\nDuracion: " + capDuracion + "\nRun: " + idUsuario_Run;
+	}
 	
 	
 }
