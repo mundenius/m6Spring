@@ -92,12 +92,12 @@ public class CapacitacionController {
 		this.icapdao = icapdao;
 	}
 	
-	@PostMapping("/crearCapacitacion")
+	@RequestMapping(value="/crearCapacitacion")
 	public String procesarFormulario(@ModelAttribute("capacitaciones")Capacitacion capacitacion) {
 		icapdao.crearCapacitacion(capacitacion);
-		return "redirect:/capacitaciones/listar";
+		return "redirect:/capacitaciones/listarCapacitaciones";
 	}
-}
+} 
 //	
 //	@GetMapping("/listar")
 //	public ModelAndView listarCapacitacion() {
