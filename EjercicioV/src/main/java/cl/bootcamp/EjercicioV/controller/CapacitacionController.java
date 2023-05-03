@@ -87,15 +87,14 @@ public class CapacitacionController {
 			
 		}
 	
-	private ImplCapacitacionDAO capdao;
 	
-	public CapacitacionController(ImplCapacitacionDAO capdao) {
-		this.capdao = capdao;
+	public CapacitacionController(ICapacitacionDao icapdao) {
+		this.icapdao = icapdao;
 	}
 	
 	@PostMapping("/crearCapacitacion")
 	public String procesarFormulario(@ModelAttribute("capacitaciones")Capacitacion capacitacion) {
-		capdao.crearCapacitacion(capacitacion);
+		icapdao.crearCapacitacion(capacitacion);
 		return "redirect:/capacitaciones/listar";
 	}
 }

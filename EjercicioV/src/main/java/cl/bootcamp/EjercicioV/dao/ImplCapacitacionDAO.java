@@ -29,8 +29,7 @@ public class ImplCapacitacionDAO implements ICapacitacionDao{
 
 	@Override
 	public boolean crearCapacitacion(Capacitacion cap) {
-		List<Capacitacion> crearCapa = new ArrayList<Capacitacion>();
-		Capacitacion capDao = new Capacitacion();
+		cap.toString();
 		
 		return false;
 	}
