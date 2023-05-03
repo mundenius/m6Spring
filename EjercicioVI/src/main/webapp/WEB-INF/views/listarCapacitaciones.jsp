@@ -33,12 +33,12 @@
                     <c:forEach var="capacitacion" items="${listaCapacitacion}">
                         
                         <tr>
-                            <th>${capacitacion.id}</th>
-                            <td>${capacitacion.rutCliente}</td>
-                            <td><fmt:formatDate value="${capacitacion.fecha}" pattern="dd.MMM.yyyy" /></td>
-                            <td>${capacitacion.hora}</td>
-                            <td>${capacitacion.lugar}</td>
-                            <td class="text-center"><i class="fa-solid fa-stopwatch px-1 text-primary"></i><span>${capacitacion.duracion} min.</span></td>
+                            <th>${capacitacion.idCapacitacion}</th>
+                            <td>${capacitacion.idUsuario_Run}</td>
+                            <td><fmt:formatDate value="${capacitacion.capFecha}" pattern="dd.MMM.yyyy" /></td>
+                            <td>${capacitacion.capHora}</td>
+                            <td>${capacitacion.capLugar}</td>
+                            <td class="text-center"><i class="fa-solid fa-stopwatch px-1 text-primary"></i><span>${capacitacion.capDuracion} min.</span></td>
                             <td></td>
                             <td>
                                 <a href="#" class="btn btn-primary btn-sm"><i class="fa-solid fa-pencil"></i></a>
